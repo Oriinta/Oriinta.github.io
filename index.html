@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orinta Filatova — Product Portfolio</title>
+<meta name="description" content="Orinta Filatova, Product Manager (Growth & AI Products). Case studies from Fraiven, Eksmo, Procter & Gamble, Tinkoff and Raiffeisen Bank.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f6f7; --surface:#fff; --ink:#18202a; --muted:#5f6b78; --line:#dde2e7; --accent:#3c6e71; --tint:#e9eef0; --card:#fff; --sh:24,32,42;
+  --t1:#f1ede6; --t2:#ebe7f3; --t3:#e4ecf3; --t4:#e3ece6;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif; --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --pad:36px; --lx:5px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0f1417; --surface:#151b1f; --ink:#e6ebee; --muted:#9aa6b0; --line:#24303a; --accent:#7fb0b2; --tint:#182025; --card:#212a30; --sh:0,0,0;
+  --t1:#2a2823; --t2:#25233a; --t3:#1b2833; --t4:#1c2b25}
+}
+*{box-sizing:border-box}
+.c1{--ct:var(--t1)}.c2{--ct:var(--t2)}.c3{--ct:var(--t3)}.c4{--ct:var(--t4)}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.65 var(--sans);overflow-x:hidden}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px 0 12px}
+a{color:var(--ink);text-decoration-color:var(--accent);text-decoration-thickness:1px;text-underline-offset:4px}
+a:hover{color:var(--accent);text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+.path{position:relative;padding-left:var(--pad)}
+.path::before{content:"";position:absolute;left:var(--lx);top:14px;bottom:0;width:1px;background:var(--accent);opacity:.7}
+.item{position:relative;scroll-margin-top:24px}
+.node{position:absolute;left:calc(var(--lx) - var(--pad) - 5px);top:7px;width:11px;height:11px;border-radius:50%;border:1px solid var(--accent);background:var(--accent);transition:background .5s,box-shadow .5s;z-index:1;box-shadow:0 0 0 5px var(--ct,transparent)}
+.io .item:not(.in) .node{background:var(--bg)}
+.yr{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.chapter{display:flex;align-items:center;gap:16px;margin:88px 0 8px;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.chapter::before{content:"";width:30px;height:6px;border-radius:3px;background:var(--ct);box-shadow:inset 0 0 0 1px rgba(var(--sh),.12)}
+.chapter::after{content:"";flex:1;height:1px;background:var(--line)}
+.hero{padding:56px 0 0}
+.eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:18px}
+h1{font:400 clamp(44px,7vw,68px)/1.02 var(--serif);letter-spacing:-.015em}
+.role{font-size:17px;color:var(--muted);margin-top:14px}
+.lead{max-width:34em;font-size:clamp(18px,2.4vw,21px);line-height:1.55;margin-top:28px}
+.contacts{display:flex;flex-wrap:wrap;gap:6px 24px;margin-top:26px;font-size:15px;color:var(--muted)}
+.btn{display:inline-block;margin-top:26px;padding:9px 18px;border:1px solid var(--ink);border-radius:4px;color:var(--ink);text-decoration:none;font-weight:500;font-size:14.5px}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.index{margin-top:56px}
+.index h2{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:14px}
+.index ol{display:grid;grid-template-columns:1fr;gap:14px}
+.index li{display:flex}
+.index a{position:relative;display:block;width:100%;padding:22px 18px 22px;background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .28s ease,border-color .28s,box-shadow .28s}
+.index a::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--ct)}
+.index a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--accent);transition:width .35s ease}
+.index a:hover,.index a:focus-visible{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 10px 24px rgba(var(--sh),.10);color:var(--ink);text-decoration:none}
+.index a:hover::after,.index a:focus-visible::after{width:100%}
+.index .tg{display:block;padding-right:58px;line-height:1.5;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;font-variant-numeric:tabular-nums}
+.index .tt{display:block;font-size:15.5px;line-height:1.35;margin:6px 0 10px;font-weight:500;padding-right:58px;min-height:2.7em}
+.index .mm{display:block;font-size:13.5px;color:var(--muted);line-height:1.4}
+.index .mm b,.index .mm .n{display:inline-block;transform-origin:left bottom;transition:transform .28s ease,color .28s;font:italic 400 26px/1 var(--serif);color:var(--accent);font-variant-numeric:lining-nums tabular-nums}
+.index .mm .n.sm{font-size:20px}
+.index a:hover .n,.index a:focus-visible .n{transform:scale(1.07);color:var(--ink)}
+.index .th{position:absolute;top:22px;right:16px;width:46px;height:46px;border-radius:8px;background:var(--ct);display:grid;place-items:center;overflow:hidden;opacity:0;transform:translateX(12px) rotate(4deg);transition:opacity .3s ease,transform .35s ease}
+.index .th img{width:100%;height:100%;object-fit:cover;display:block}
+.index .th svg{width:28px;height:28px;fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.index a:hover .th,.index a:focus-visible .th{opacity:1;transform:none}
+@media (hover:none){.index .th{opacity:1;transform:none}}
+.item.case{margin-top:36px}
+.item.case~.item.case{margin-top:88px}
+.kicker{font-size:13.5px;color:var(--muted);max-width:60em}
+.kicker a{color:var(--muted)}
+.head{display:flex;flex-direction:column;gap:14px;margin:10px 0 30px}
+h2.t{font:400 clamp(30px,4.6vw,42px)/1.1 var(--serif);letter-spacing:-.01em;max-width:16em}
+.hn{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.n{font:italic 400 clamp(38px,5vw,54px)/1 var(--serif);color:var(--accent);letter-spacing:-.01em;font-variant-numeric:lining-nums tabular-nums}
+.n.sm{font-size:clamp(28px,3.6vw,36px)}
+.arr{font-style:normal;font-family:var(--sans);font-weight:300;color:var(--muted);padding:0 .08em}
+.hn span{font-size:13.5px;color:var(--muted);max-width:16em;line-height:1.35}
+.step{margin:0 0 26px;max-width:68ch}
+.step.w{max-width:none}
+.step h3{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:8px}
+.step ul{list-style:none}
+.step li{margin:6px 0;position:relative;padding-left:18px}
+.step li::before{content:"";position:absolute;left:0;top:.82em;width:8px;height:1px;background:var(--accent)}
+.step ul.metrics li{padding-left:0}
+.step ul.metrics li::before{display:none}
+.step .p,.step>p{max-width:68ch}
+.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin-top:4px}
+.metrics.two,.metrics.three{grid-template-columns:minmax(0,1fr)}
+.metrics li{border-top:1px solid var(--line);padding:14px 0 18px !important;margin:0 !important}
+.metrics b{display:block;font:italic 400 clamp(36px,4.4vw,46px)/1.05 var(--serif);color:var(--ink);font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.01em}
+.metrics b.tx{font:500 19px/1.3 var(--sans);font-style:normal;padding:11px 0 5px}
+.metrics span{display:block;font-size:13.5px;line-height:1.4;color:var(--muted);margin-top:6px;max-width:26em}
+.sub{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500;margin:18px 0 8px}
+.also{font-size:15px;color:var(--muted);max-width:68ch;margin:6px 0 0}
+.also b{color:var(--ink);font-weight:600}
+figure{margin-top:36px}
+figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
+.cards{display:grid;grid-template-columns:1fr;gap:30px;margin:8px}
+.cards.ads{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 22px}
+.cards li{min-width:0}
+.cards img{display:block;width:100%;height:auto;border-radius:3px;background:var(--card);transition:transform .35s ease,box-shadow .35s ease;transform:rotate(-1.2deg);
+  box-shadow:0 0 0 8px var(--card),0 1px 2px 8px rgba(var(--sh),.06),0 6px 14px 8px rgba(var(--sh),.07),0 16px 32px 8px rgba(var(--sh),.07)}
+.cards li:nth-child(even) img{transform:rotate(1deg)}
+.cards li:nth-child(3n) img{transform:rotate(-.8deg)}
+.cards li:hover img,.cards li:focus-within img{transform:rotate(0) translateY(-5px);box-shadow:0 0 0 8px var(--card),0 2px 4px 8px rgba(var(--sh),.07),0 12px 24px 8px rgba(var(--sh),.10),0 26px 48px 8px rgba(var(--sh),.10)}
+.cards span{display:block;font-size:13px;color:var(--muted);margin-top:18px;line-height:1.4}
+.cards.posters li:first-child{max-width:340px}
+@media (prefers-reduced-motion:reduce){.cards img,.cards li:nth-child(n) img,.cards li:hover img{transform:none !important;transition:none}.index a,.index a::after,.index .th,.index .n{transition:none !important}.index a:hover,.index a:focus-visible,.index a:hover .n,.index a:focus-visible .n{transform:none}.index .th{transform:none}}
+.doodle{position:absolute;fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.doodle.spark{width:22px;height:22px;left:-22px;top:-4px}
+.doodle.curve{display:none}
+.hn .n{position:relative}
+.hn{position:relative}
+.diagram{margin-top:22px}
+.diagram svg{display:block;width:100%;max-width:420px;height:auto;color:var(--ink)}
+.diagram .node{position:static;fill:var(--tint);stroke:currentColor;stroke-width:1.5;background:none;border:0;width:auto;height:auto;border-radius:0}
+.diagram text{fill:currentColor;font:600 14px var(--sans);text-anchor:middle}
+.diagram .small{font:500 12px var(--sans);fill:var(--muted)}
+.diagram .arrow{fill:none;stroke:currentColor;stroke-width:1.5}
+.diagram .block{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round}
+.earlier{margin-top:36px}
+.earlier h2{font:400 clamp(28px,4vw,34px)/1.1 var(--serif)}
+.earlier p{margin-top:10px;max-width:68ch}
+.final{margin-top:96px;padding:0 0 72px}
+.final::before{content:"";position:absolute;left:calc(var(--lx) - var(--pad) - 6px);top:18px;bottom:0;width:13px;background:var(--bg)}
+.final .node{box-shadow:0 0 0 5px var(--tint)}
+.final h2{font:400 clamp(32px,5vw,48px)/1.08 var(--serif);letter-spacing:-.01em}
+.final .contacts{margin-top:20px}
+.final .fine{margin-top:36px;font-size:13.5px;color:var(--muted)}
+.final .fine p{margin-top:4px}
+@media (min-width:640px){
+  .wrap{padding:0 32px}
+  .cards{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:auto;display:flex;align-items:flex-start;gap:30px}
+  .cards li{flex:var(--r) 1 0}
+  .cards.ads{display:flex;gap:26px}
+  .cards.posters{max-width:760px}
+  .cards.posters li:first-child{max-width:none}
+  .cards.solo{max-width:none}
+  .metrics{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .metrics.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metrics.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .index ol{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width:900px){
+  :root{--pad:136px;--lx:100px}
+  .wrap{padding:0 40px}
+  .yr{position:absolute;left:calc(var(--lx) - var(--pad) - 104px);width:88px;text-align:right;top:0;margin:0;line-height:25px}
+  .node{top:7px}
+  .index ol{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .head{flex-direction:row;justify-content:space-between;align-items:flex-end;gap:40px}
+  .hn{flex-direction:column;align-items:flex-end;gap:6px;text-align:right;flex-wrap:nowrap}
+  .hn span{max-width:14em}
+  .hero{padding-top:88px}
+  .doodle.curve{display:block;width:60px;height:38px;right:92px;bottom:-10px}
+}
+@media print{.path::before{display:none}}
+.mascot{margin:24px 0 0;max-width:170px}
+.mascot img{display:block;width:100%;height:auto;background:#fff;padding:6px;border-radius:10px;box-shadow:0 1px 2px rgba(20,30,40,.08),0 6px 18px rgba(20,30,40,.10);transform:rotate(-1.5deg);transition:transform .25s ease}
+.mascot:hover img{transform:rotate(0) translateY(-2px)}
+.mascot figcaption{font-size:12.5px;color:var(--muted, #5f6b78);margin-top:10px}
+@media (prefers-reduced-motion: reduce){.mascot img{transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap"><div class="path">
+
+<header class="item hero" id="top">
+  <span class="node" aria-hidden="true"></span>
+  <p class="eyebrow">Portfolio</p>
+  <h1>Orinta Filatova</h1>
+  <p class="role">Product Manager, Growth &amp; AI Products</p>
+  <p class="lead">6 years in product management and consulting at P&amp;G, Eksmo and Nielsen, 5 years as a fintech engineer, and since 2025 co-founder of two AI products.</p>
+  <ul class="contacts">
+    <li><a href="mailto:orinta.filatova@gmail.com">orinta.filatova@gmail.com</a></li>
+    <li>Telegram <a href="https://t.me/oorinta">@oorinta</a></li>
+    <li>Belgrade, Serbia</li>
+  </ul>
+  <a class="btn" href="assets/Orinta_Filatova_CV.pdf">Download CV (PDF)</a>
+
+  <nav class="index" aria-labelledby="glance-h">
+    <h2 id="glance-h">At a glance</h2>
+    <ol>
+      <li class="c1"><a href="#pg"><span class="tg">2013 · Brands &amp; launches</span><span class="tt">P&amp;G: bruno banani launch</span><span class="mm"><span class="n">105%</span> of target</span><span class="th" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="9" width="11" height="12" rx="2"/><path d="M10 9V6.5h4V9M9 3h6v3.5H9zM9.5 14h5"/></svg></span></a></li>
+      <li class="c1"><a href="#eksmo"><span class="tg">2015 · Brands &amp; launches</span><span class="tt">Eksmo: Smashbook line from zero</span><span class="mm"><span class="n">200,000+</span> items sold</span><span class="th" aria-hidden="true"><img src="assets/smashly.jpg" alt="" loading="lazy" width="360" height="566"></span></a></li>
+      <li class="c3"><a href="#tinkoff-fx"><span class="tg">2022 · Fintech engineering</span><span class="tt">Tinkoff: preventing FX rate gaming</span><span class="mm">built after a <span class="n">~$7M</span> incident</span><span class="th" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 0 1 7.5 5.2M20 4.5l-.5 4.7-4.6-.9M12 20a8 8 0 0 1-7.5-5.2M4 19.5l.5-4.7 4.6.9"/></svg></span></a></li>
+      <li class="c3"><a href="#raiffeisen"><span class="tg">2023 · Fintech engineering</span><span class="tt">Raiffeisen: rate-data control tool</span><span class="mm"><span class="n sm">~1 h/day → incidents only</span></span><span class="th" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M7 17v-5M12 17V7M17 17v-8"/><path d="M5 6l3 2.5L12 4l3 3 4-3"/></svg></span></a></li>
+      <li class="c4"><a href="#fraiven-reco"><span class="tg">2026 · Own AI products</span><span class="tt">Fraiven: recommendation quality</span><span class="mm"><span class="n">38% → 96%</span> recall</span><span class="th" aria-hidden="true"><img src="assets/fraiven-app.jpg" alt="" loading="lazy" width="1400" height="983"></span></a></li>
+      <li class="c4"><a href="#fraiven-hook"><span class="tg">Apr 2026 · Own AI products</span><span class="tt">Fraiven: finding the MVP hook</span><span class="mm"><span class="n">5.8×</span> weekly users</span><span class="th" aria-hidden="true"><img src="assets/fraiven-app.jpg" alt="" loading="lazy" width="1400" height="983"></span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+<p class="chapter c1">Brands &amp; launches</p>
+
+<article class="item case c1" id="pg">
+  <span class="yr">2013</span><span class="node" aria-hidden="true"></span>
+  <p class="kicker">Procter &amp; Gamble · Product Manager, Lifestyle fragrances (5 brands) · Oct 2013 – Jul 2015</p>
+  <div class="head"><h2 class="t">P&amp;G: bruno banani Absolute Man launch</h2><p class="hn"><b class="n">105%</b><span>of target</span></p></div>
+  <div class="step"><h3>Problem</h3>
+    <p>In Feb 2014 I had to launch a men's fragrance into a declining category. Spend alone wasn't going to make it stand out, so media and digital had to carry that.</p></div>
+  <div class="step"><h3>What I did</h3>
+    <p>Ran a 360° plan: TV (500 GRP), 32 print placements, in-store sampling and promo. Digital had two goals: awareness on mail.ru, VK, Odnoklassniki and YouTube, and engagement through app integrations and special projects with Cosmopolitan and Men’s Health — the first in-app integrations for the Lifestyle portfolio.</p>
+    <ul>
+      <li><b>Dating-app integration</b> (TopFace, 10M users): branded banners, a “put the BB sign on your page” contest and a branded page with the TV spot.</li>
+      <li><b>Shareable photo creative</b> in Skype that users posted to their social networks.</li>
+      <li><b>Shoppable i-video</b> with a buy button, a Mamba partnership (#1 dating network in Russia) and the brand’s first-ever PR event.</li>
+    </ul></div>
+  <div class="step w"><h3>Result</h3>
+    <ul class="metrics">
+      <li><b>105%</b><span>of the 5-month target; by months 4–5, monthly sales ran at ~2× plan</span></li>
+      <li><b>140%</b><span>of target at L'Etoile</span></li>
+      <li><b>56M+</b><span>digital impressions, 60% target-audience reach (index 150)</span></li>
+      <li><b>4.8×</b><span>CTR 0.72% vs the previous launch (index 477)</span></li>
+    </ul>
+    <p class="sub">Digital highlights</p>
+    <ul class="metrics">
+      <li><b>20%</b><span>peak CTR in the dating-app integration (36M impressions)</span></li>
+      <li><b>26×</b><span>share rate vs P&amp;G average: 1.8% vs 0.07% (photo integration)</span></li>
+      <li><b>~1M</b><span>YouTube views, driven by shoppable i-video</span></li>
+      <li><b>First</b><span>in-app integrations for the portfolio: high CTR at low cost</span></li>
+    </ul>
+    <p class="also" style="margin-top:20px">In the photo integration, every second user who opened the banner took a photo. The first-ever bruno banani PR event produced about 50 publications with a ~8M readership.</p></div>
+</article>
+
+<article class="item case c1" id="eksmo">
+  <span class="yr">2015</span><span class="node" aria-hidden="true"></span>
+  <p class="kicker">Eksmo Publishing (Russia's largest publisher) · Product Manager · May 2015 – May 2017</p>
+  <div class="head"><h2 class="t">Eksmo: Smashbook line from zero</h2><p class="hn"><b class="n"><svg class="doodle spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c.6 5 2.4 8.4 9 10-6.6 1.6-8.4 5-9 10-.6-5-2.4-8.4-9-10 6.6-1.6 8.4-5 9-10z"/></svg>200,000+</b><span>items sold</span><svg class="doodle curve" viewBox="0 0 60 38" aria-hidden="true"><path d="M4 34C10 14 26 8 46 6M46 6l-9-5M46 6l-7 9"/></svg></p></div>
+  <div class="step"><h3>Problem</h3>
+    <p>I had to build a creative-journal line from scratch. The launch budget was about $4K (RUB 286K), far too small for paid media.</p></div>
+  <div class="step"><h3>What I did</h3>
+    <ul>
+      <li>Launched the first 7 titles at 1,500 copies each in Jan 2016.</li>
+      <li>Created the brand character "Smashly" (tagline "Smashly approves") used on POSM, e-mail, VK community and retail banners.</li>
+      <li>Worked through bloggers and community, since paid media was out of reach: blogger announcements, a VK community with monthly contests, an all-Russian school contest (500+ schools) run through a textbook publisher’s teacher network, a Mosgortur summer-camp contest, PR with a child psychologist.</li>
+      <li>Trade marketing: 2,486 posters plus shelf-talkers and stands across 8+ regions and Kazakhstan; 179 active retail accounts including Labirint, Wildberries and OZON.</li>
+    </ul></div>
+  <div class="step w"><h3>Result</h3>
+    <ul class="metrics">
+      <li><b>200,000+</b><span>items sold by Mar 2017, from 7 titles to 20+ SKUs</span></li>
+      <li><b>10×</b><span>print run per title in four months (1,500 → 15,000)</span></li>
+      <li><b>74.7%</b><span>sell-through at Dom Knigi, St Petersburg</span></li>
+      <li><b>Strategic</b><span>line entered the publisher's strategic series</span></li>
+    </ul></div>
+  <p class="also"><b>Also:</b> a fixed-price promo for a travel-guide series lifted sales 43% across ~100 stores.</p>
+  <figure class="mascot">
+    <img src="assets/smashly.jpg" width="360" height="566" loading="lazy" alt="Smashly, an illustrated girl holding a smashbook">
+    <figcaption>Smashly, the brand character I created for the line</figcaption>
+  </figure>
+</article>
+
+<p class="chapter c2">Analytics</p>
+
+<section class="item earlier c2" aria-labelledby="earlier-h">
+  <span class="yr">2017</span><span class="node" aria-hidden="true"></span>
+  <h2 id="earlier-h">Nielsen: marketing-mix analytics</h2>
+  <p><b>Nielsen, 2017–2019 · Consultant / Analytics Team Lead.</b> About 10 marketing-mix-modelling projects for PepsiCo, J&amp;J, Ferrero and Essity; budget-allocation and pricing advice; validated regressions (R², p-values).</p>
+</section>
+
+<p class="chapter c3">Fintech engineering</p>
+
+<article class="item case c3" id="tinkoff-fx">
+  <span class="yr">2022</span><span class="node" aria-hidden="true"></span>
+  <p class="kicker">Tinkoff · Senior Java Developer &amp; de-facto delivery manager · currency-conversion platform · May 2022 – Jan 2023</p>
+  <div class="head"><h2 class="t">Tinkoff: preventing FX rate gaming</h2><p class="hn"><b class="n">~$7M</b><span>built after the incident</span></p></div>
+  <div class="step"><h3>Problem</h3>
+    <p>The bank sets different FX rates and spreads for different client groups and currency pairs. If cross-rates or spreads don't line up, a client can chain conversions (e.g. A→B→C→A) and lock in a risk-free profit at the bank's expense. That is called rate gaming, or arbitrage. The risk was real: in early 2022, before I joined, cross-rate errors cost the bank an estimated ~$7M according to press reports. The courts later sided with the clients, so that money couldn't be clawed back. The fix had to stop it from happening in the first place.</p>
+    <div class="diagram">
+    <svg viewBox="0 0 420 270" role="img" aria-label="Diagram of an FX arbitrage loop: USD to EUR to RUB and back to USD returns more than 100 percent, so the control blocks the cycle.">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+      <path class="arrow" marker-end="url(#ah)" d="M246 48 Q320 70 345 150"/>
+      <path class="arrow" marker-end="url(#ah)" d="M300 208 Q210 238 118 208"/>
+      <path class="arrow" marker-end="url(#ah)" d="M75 150 Q100 70 174 48"/>
+      <circle class="node" cx="210" cy="36" r="30"/><text x="210" y="41">USD</text>
+      <circle class="node" cx="360" cy="190" r="30"/><text x="360" y="195">EUR</text>
+      <circle class="node" cx="60" cy="190" r="30"/><text x="60" y="195">RUB</text>
+      <text class="small" x="330" y="58">inconsistent</text><text class="small" x="330" y="72">rate</text>
+      <path class="block" d="M195 108l30 30M225 108l-30 30"/>
+      <text x="210" y="168">blocked:</text>
+      <text class="small" x="210" y="186">cycle returns &gt; 100%</text>
+    </svg>
+  </div></div>
+  <div class="step"><h3>What I did</h3>
+    <ul>
+      <li>Built an automated gaming check that continuously prices conversion cycles across currencies with the live client rates and flags any cycle that returns more than it started with.</li>
+      <li>When a cycle is exploitable, the service identifies the faulty rate, restores a correct one automatically and sends a critical alert to the team; every case is tracked as a metric.</li>
+      <li>Implemented flexible rate and spread settings by client group, giving the business finer control over FX margins.</li>
+      <li>Rolled out new currencies to client segments.</li>
+      <li>Was the team's de-facto delivery manager for several months: owned every production release of the currency-conversion team — planning, coordination, safe rollout and incident response.</li>
+    </ul></div>
+  <div class="step w"><h3>Result</h3>
+    <ul class="metrics two">
+      <li><b>~$7M</b><span>estimated loss from a cross-rate incident before I joined: the risk the control closes</span></li>
+      <li><b class="tx">100+ FX operations/s</b><span>protected in real time</span></li>
+      <li><b>Auto-fix</b><span>faulty rate restored automatically, with a critical alert</span></li>
+      <li><b class="tx">Rates &amp; spreads by client group</b><span>finer control of FX margin</span></li>
+    </ul></div>
+</article>
+
+<article class="item case c3" id="raiffeisen">
+  <span class="yr">2023</span><span class="node" aria-hidden="true"></span>
+  <p class="kicker">Raiffeisen Bank · Senior Java Developer · Jan 2023 – Jul 2025</p>
+  <div class="head"><h2 class="t">Raiffeisen Bank: rate-data control tool</h2><p class="hn"><b class="n sm">~1 h/day <i class="arr">→</i> incidents only</b><span>manual checks</span></p></div>
+  <div class="step"><h3>Problem</h3>
+    <p>SOFR, ESTR and EFFR reference rates are each published with their own lag (T-1, T-2), and all of them have to be in before the tax and accounting calculations can start. Every day the team spent about an hour checking this by hand.</p></div>
+  <div class="step"><h3>What I did</h3>
+    <p>I built a control tool with an admin panel and alerting. It asks for a human only when something is missing. I also designed a hot/cold storage architecture.</p></div>
+  <div class="step w"><h3>Result</h3>
+    <ul class="metrics two">
+      <li><b class="tx">~1 h/day <i class="arr">→</i> incidents only</b><span>manual checks</span></li>
+      <li><b>3+ years</b><span>hot/cold storage running without incidents</span></li>
+    </ul></div>
+</article>
+
+<p class="chapter c4">Own AI products</p>
+
+<article class="item case c4" id="fraiven-reco">
+  <span class="yr">2026</span><span class="node" aria-hidden="true"></span>
+  <p class="kicker">Fraiven · Co-founder &amp; Product Lead · AI features</p>
+  <div class="head"><h2 class="t">Fraiven: recommendation quality</h2><p class="hn"><b class="n">38% <i class="arr">→</i> 96%</b><span>recall</span></p></div>
+  <div class="step"><h3>Problem</h3>
+    <p>Interest-based recommendations had to surface relevant places and respect what a user dislikes. I wanted to check that on real examples before anyone saw them.</p></div>
+  <div class="step"><h3>What I did</h3>
+    <ul>
+      <li>Built a hand-labelled golden set as a fixed offline test.</li>
+      <li>Switched from category-level to item-level embedding matching.</li>
+      <li>Handled anti-interests (things a user dislikes) as explicit exclusions.</li>
+      <li>Built an MCP server exposing catalogue search as tools for AI agents.</li>
+    </ul></div>
+  <div class="step w"><h3>Result</h3>
+    <ul class="metrics three">
+      <li><b>38% <i class="arr">→</i> 96%</b><span>recall: share of relevant places found</span></li>
+      <li><b>96%</b><span>precision at that recall</span></li>
+      <li><b>0</b><span>false exclusions of anti-interests in the test</span></li>
+    </ul></div>
+  <p class="also"><b>Lesson:</b> before an AI feature ships, I run it offline against a fixed test set and see how it does.</p>
+</article>
+
+<article class="item case c4" id="fraiven-hook">
+  <span class="yr">Apr 2026</span><span class="node" aria-hidden="true"></span>
+  <p class="kicker"><a href="https://fraiven.com">Fraiven</a> · Co-founder &amp; Product Lead · Apr 2026 – present</p>
+  <div class="head"><h2 class="t">Fraiven: finding the MVP hook</h2><p class="hn"><b class="n"><svg class="doodle spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c.6 5 2.4 8.4 9 10-6.6 1.6-8.4 5-9 10-.6-5-2.4-8.4-9-10 6.6-1.6 8.4-5 9-10z"/></svg>5.8×</b><span>weekly users</span></p></div>
+  <div class="step"><h3>Problem</h3>
+    <p>Fraiven is a social app that gets people in Belgrade out together: small group plans with new people (archery, drum circle), chats, and a 900+ item catalogue of places and events as a supporting layer. It is a PWA in RU/SR/EN, launched in 4 weeks. We had three ideas and no clear sign of which one people would actually come for.</p></div>
+  <div class="step"><h3>What I did</h3>
+    <ul>
+      <li>Ran in-depth interviews and customer-journey mapping.</li>
+      <li>Tested three MVP hooks: city catalogue, AI "vibe" search, group plans with new people. Repositioned around group plans.</li>
+      <li>Sold concrete plans in Instagram ads and community posts: "archery together", "drum circle — come and meet people".</li>
+      <li>Validated a commission-based revenue model (venues pay commission).</li>
+      <li>Set up measurement: GA4 funnel with consent mode, UTM attribution, impression logging.</li>
+      <li>Built retention loops: personalised weekly digest, invite links with guest join, wishlist and "Memories".</li>
+    </ul></div>
+  <div class="step w"><h3>Result</h3>
+    <ul class="metrics three">
+      <li><b>5.8×</b><span>weekly users in 7 weeks</span></li>
+      <li><b>75.8%</b><span>engagement rate</span></li>
+      <li><b>20%</b><span>of users reached the core action: joining a group chat</span></li>
+    </ul></div>
+  <figure>
+    <ul class="cards solo">
+      <li style="--r:1.42"><img src="assets/fraiven-app.jpg" width="1400" height="983" loading="lazy" alt="Fraiven app: search, filters, an event card and a map of Belgrade"><span>Fraiven: events, activities and places on one map, with group plans on top.</span></li>
+    </ul>
+  </figure>
+  <figure>
+    <ul class="cards ads">
+      <li style="--r:.8"><img src="assets/ad-organ.jpg" width="600" height="750" loading="lazy" alt="Ad: going to an organ music festival together, free"></li>
+      <li style="--r:.8"><img src="assets/ad-archery.jpg" width="600" height="750" loading="lazy" alt="Ad: friends by interests are not made in chats — archery every two weeks"></li>
+      <li style="--r:.889"><img src="assets/ad-digest.jpg" width="600" height="675" loading="lazy" alt="Weekly digest: go out and pay nothing, seven free events"></li>
+      <li style="--r:1"><img src="assets/ad-how.jpg" width="600" height="600" loading="lazy" alt="Carousel slide: we find experiences and bring people together by interests, free"></li>
+    </ul>
+    <figcaption>Instagram creatives (in Russian): each one sells a specific plan.</figcaption>
+  </figure>
+</article>
+</main>
+
+<footer class="item final">
+  <span class="yr">Now</span><span class="node" aria-hidden="true"></span>
+  <h2>Now — open to PM roles</h2>
+  <ul class="contacts">
+    <li><a href="mailto:orinta.filatova@gmail.com">orinta.filatova@gmail.com</a></li>
+    <li>Telegram <a href="https://t.me/oorinta">@oorinta</a></li>
+    <li><a href="assets/Orinta_Filatova_CV.pdf">CV (PDF)</a></li>
+  </ul>
+  <div class="fine">
+    <p>Orinta Filatova · Belgrade, Serbia</p>
+    <p><a href="mailto:orinta.filatova@gmail.com">orinta.filatova@gmail.com</a> · <a href="https://t.me/oorinta">Telegram @oorinta</a> · <a href="assets/Orinta_Filatova_CV.pdf">CV (PDF)</a></p>
+  </div>
+</footer>
+
+</div></div>
+<script>if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){document.documentElement.classList.add('io');var o=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}})},{rootMargin:'0px 0px -30% 0px'});document.querySelectorAll('.item').forEach(function(n){o.observe(n)})}</script>
+</body>
+</html>
