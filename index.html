@@ -64,6 +64,10 @@ h1{font:400 clamp(44px,7vw,68px)/1.02 var(--serif);letter-spacing:-.015em}
 .index a:hover .n,.index a:focus-visible .n{transform:scale(1.07);color:var(--ink)}
 .index .th{position:absolute;top:22px;right:16px;width:46px;height:46px;border-radius:8px;background:var(--ct);display:grid;place-items:center;overflow:hidden;opacity:0;transform:translateX(12px) rotate(4deg);transition:opacity .3s ease,transform .35s ease}
 .index .th img{width:100%;height:100%;object-fit:cover;display:block}
+.index .th svg.pic{width:100%;height:100%;stroke:none}
+.index .th .pic .f{fill:var(--accent)}
+.index .th .pic .s{fill:none;stroke:var(--accent);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.index .th .pic text{fill:var(--bg);font:700 9.5px var(--sans);text-anchor:middle}
 .index .th svg{width:28px;height:28px;fill:none;stroke:var(--accent);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .index a:hover .th,.index a:focus-visible .th{opacity:1;transform:none}
 @media (hover:none){.index .th{opacity:1;transform:none}}
@@ -183,12 +187,13 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
   <nav class="index" aria-labelledby="glance-h">
     <h2 id="glance-h">At a glance</h2>
     <ol>
-      <li class="c1"><a href="#pg"><span class="tg">2013 · Brands &amp; launches</span><span class="tt">P&amp;G: bruno banani launch</span><span class="mm"><span class="n">105%</span> of target</span><span class="th" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="9" width="11" height="12" rx="2"/><path d="M10 9V6.5h4V9M9 3h6v3.5H9zM9.5 14h5"/></svg></span></a></li>
-      <li class="c1"><a href="#eksmo"><span class="tg">2015 · Brands &amp; launches</span><span class="tt">Eksmo: Smashbook line from zero</span><span class="mm"><span class="n">200,000+</span> items sold</span><span class="th" aria-hidden="true"><img src="assets/smashly.jpg" alt="" loading="lazy" width="360" height="566"></span></a></li>
-      <li class="c3"><a href="#tinkoff-fx"><span class="tg">2022 · Fintech engineering</span><span class="tt">Tinkoff: preventing FX rate gaming</span><span class="mm">built after a <span class="n">~$7M</span> incident</span><span class="th" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 0 1 7.5 5.2M20 4.5l-.5 4.7-4.6-.9M12 20a8 8 0 0 1-7.5-5.2M4 19.5l.5-4.7 4.6.9"/></svg></span></a></li>
-      <li class="c3"><a href="#raiffeisen"><span class="tg">2023 · Fintech engineering</span><span class="tt">Raiffeisen: rate-data control tool</span><span class="mm"><span class="n sm">~1 h/day → incidents only</span></span><span class="th" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M7 17v-5M12 17V7M17 17v-8"/><path d="M5 6l3 2.5L12 4l3 3 4-3"/></svg></span></a></li>
       <li class="c4"><a href="#fraiven-reco"><span class="tg">2026 · Own AI products</span><span class="tt">Fraiven: recommendation quality</span><span class="mm"><span class="n">38% → 96%</span> recall</span><span class="th" aria-hidden="true"><img src="assets/fraiven-app.jpg" alt="" loading="lazy" width="1400" height="983"></span></a></li>
       <li class="c4"><a href="#fraiven-hook"><span class="tg">Apr 2026 · Own AI products</span><span class="tt">Fraiven: finding the MVP hook</span><span class="mm"><span class="n">5.8×</span> weekly users</span><span class="th" aria-hidden="true"><img src="assets/fraiven-app.jpg" alt="" loading="lazy" width="1400" height="983"></span></a></li>
+      <li class="c4"><a href="#eliryn"><span class="tg">Feb 2026 · Own AI products</span><span class="tt">Eliryn: AI-guided coaching games</span><span class="mm"><span class="n">15% → 73%</span> games finished</span><span class="th" aria-hidden="true"><img src="assets/eliryn-logo.jpg" alt="" loading="lazy" width="480" height="480"></span></a></li>
+      <li class="c3"><a href="#raiffeisen"><span class="tg">2023 · Fintech engineering</span><span class="tt">Raiffeisen: rate-data control tool</span><span class="mm"><span class="n sm">~1 h/day → incidents only</span></span><span class="th" aria-hidden="true"><svg class="pic" viewBox="0 0 46 46" aria-hidden="true"><path class="s" d="M8 37h30"/><path class="s" d="M8 31h7v-6h7v-4h7v-6h9" opacity=".45"/><path class="s" d="M8 27l7-3 7 4 7-8 9-2"/><circle class="f" cx="15" cy="24" r="1.8"/><circle class="f" cx="22" cy="28" r="1.8"/><circle class="f" cx="29" cy="20" r="1.8"/><circle class="f" cx="35" cy="11" r="6.5"/><path d="M32.2 11.2l2 2 3.6-4" fill="none" stroke="var(--bg)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></li>
+      <li class="c3"><a href="#tinkoff-fx"><span class="tg">2022 · Fintech engineering</span><span class="tt">Tinkoff: preventing FX rate gaming</span><span class="mm">built after a <span class="n">~$7M</span> incident</span><span class="th" aria-hidden="true"><svg class="pic" viewBox="0 0 46 46" aria-hidden="true"><path class="s" d="M29 13.5q6 3 7 10M30 36.5h-14M10 23.5q1-7 7-10"/><path class="s" d="M34.6 20.8l1.4 2.9 2.4-2.1M18.6 34.4l-2.6 2.1 2.8 1.6M14.8 11.6l2.2 1.9-2.9 1.1"/><circle class="f" cx="23" cy="11" r="7.5"/><text x="23" y="14.4">$</text><circle class="f" cx="36" cy="31" r="7.5"/><text x="36" y="34.4">€</text><circle class="f" cx="10" cy="31" r="7.5"/><text x="10" y="34.4">₽</text></svg></span></a></li>
+      <li class="c1"><a href="#eksmo"><span class="tg">2015 · Brands &amp; launches</span><span class="tt">Eksmo: Smashbook line from zero</span><span class="mm"><span class="n">200,000+</span> items sold</span><span class="th" aria-hidden="true"><img src="assets/smashly.jpg" alt="" loading="lazy" width="360" height="566"></span></a></li>
+      <li class="c1"><a href="#pg"><span class="tg">2013 · Brands &amp; launches</span><span class="tt">P&amp;G: bruno banani launch</span><span class="mm"><span class="n">105%</span> of target</span><span class="th" aria-hidden="true"><svg class="pic" viewBox="0 0 46 46" aria-hidden="true"><rect class="f" x="18" y="5" width="10" height="7" rx="1.5"/><rect class="f" x="20.5" y="12" width="5" height="4" opacity=".7"/><rect class="f" x="12" y="16" width="22" height="25" rx="4"/><rect x="16" y="24" width="14" height="9" rx="1" fill="var(--bg)" opacity=".85"/><path d="M19 28.5h8" stroke="var(--accent)" stroke-width="1.4" stroke-linecap="round"/><path d="M15 19.5v5" stroke="var(--bg)" stroke-width="1.6" stroke-linecap="round" opacity=".5"/></svg></span></a></li>
     </ol>
   </nav>
 </header>
@@ -308,7 +313,11 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
   <div class="step"><h3>Problem</h3>
     <p>SOFR, ESTR and EFFR reference rates are each published with their own lag (T-1, T-2), and all of them have to be in before the tax and accounting calculations can start. Every day the team spent about an hour checking this by hand.</p></div>
   <div class="step"><h3>What I did</h3>
-    <p>I built a control tool with an admin panel and alerting. It asks for a human only when something is missing. I also designed a hot/cold storage architecture.</p></div>
+    <ul>
+      <li>Built a control tool with an admin panel. Business-logic checks find problem cases, such as a rate that hasn't arrived within its expected publication lag.</li>
+      <li>Monitoring: the checks are exposed as Micrometer metrics in Prometheus, with alerts to the team in Mattermost and Telegram. A human steps in only when something is wrong.</li>
+      <li>Designed a hot/cold storage architecture.</li>
+    </ul></div>
   <div class="step w"><h3>Result</h3>
     <ul class="metrics two">
       <li><b class="tx">~1 h/day <i class="arr">→</i> incidents only</b><span>manual checks</span></li>
@@ -317,6 +326,46 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
 </article>
 
 <p class="chapter c4">Own AI products</p>
+
+<article class="item case c4" id="eliryn">
+  <span class="yr">Feb 2026</span><span class="node" aria-hidden="true"></span>
+  <p class="kicker"><a href="https://eliryn.world">Eliryn</a> · Founder · AI coaching games, Telegram bot + web · Aug 2025 – Apr 2026</p>
+  <div class="head"><h2 class="t">Eliryn: AI-guided coaching games</h2><p class="hn"><b class="n">15% <i class="arr">→</i> 73%</b><span>of started games finished</span></p></div>
+  <div class="step"><h3>Problem</h3>
+    <p>Eliryn turns coaching and art-therapy techniques into short metaphorical games: a user answers questions about images and stories, and an AI guide helps turn the answers into ideas and a plan. The first version needed free-text answers at every step. Users of metaphorical cards are used to picking a card, not writing, so most people who opened a game never typed a first answer, and few of those who did reached the end.</p>
+    <div class="diagram">
+    <svg viewBox="0 0 420 260" role="img" aria-label="Diagram: the user's answer goes to an LLM classifier. ANSWER moves to the next stage; PARTIAL gets a follow-up question; DON'T KNOW gets ideas and hints. Only ANSWER advances the game.">
+      <defs><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor"/></marker></defs>
+      <path class="node" d="M143 8h134a8 8 0 0 1 8 8v24a8 8 0 0 1 -8 8h-134a8 8 0 0 1 -8 -8v-24a8 8 0 0 1 8 -8z"/><text x="210" y="33">User's answer</text>
+      <path class="arrow" marker-end="url(#ah2)" d="M210 48V82"/>
+      <path class="node" d="M133 86h154a8 8 0 0 1 8 8v24a8 8 0 0 1 -8 8h-154a8 8 0 0 1 -8 -8v-24a8 8 0 0 1 8 -8z"/><text x="210" y="111">LLM classifies</text>
+      <path class="arrow" marker-end="url(#ah2)" d="M180 126Q90 140 72 180"/>
+      <path class="arrow" marker-end="url(#ah2)" d="M210 126V180"/>
+      <path class="arrow" marker-end="url(#ah2)" d="M240 126Q330 140 348 180"/>
+      <path class="node" d="M18 184h108a8 8 0 0 1 8 8v24a8 8 0 0 1 -8 8h-108a8 8 0 0 1 -8 -8v-24a8 8 0 0 1 8 -8z"/><text x="72" y="209">ANSWER</text>
+      <path class="node" d="M156 184h108a8 8 0 0 1 8 8v24a8 8 0 0 1 -8 8h-108a8 8 0 0 1 -8 -8v-24a8 8 0 0 1 8 -8z"/><text x="210" y="209">PARTIAL</text>
+      <path class="node" d="M294 184h108a8 8 0 0 1 8 8v24a8 8 0 0 1 -8 8h-108a8 8 0 0 1 -8 -8v-24a8 8 0 0 1 8 -8z"/><text x="348" y="209">DON'T KNOW</text>
+      <text class="small" x="72" y="244">next stage</text>
+      <text class="small" x="210" y="244">follow-up question</text>
+      <text class="small" x="348" y="244">ideas &amp; hints</text>
+    </svg>
+  </div></div>
+  <div class="step"><h3>What I did</h3>
+    <ul>
+      <li>Kept each game a scripted flow and used the LLM as a router: after every step it classifies the answer (full, partial, "give me ideas", "don't know", off-topic). Only a full answer moves the game forward; the other categories get a tailored follow-up and the user stays on the step. The script stays predictable, and the AI decides when to move on.</li>
+      <li>Lowered the effort to answer: tap a card, pick a point on a scale, or press "Give ideas" / "Don't know". The buttons skip the classifier call entirely, and ideas come from a stronger model.</li>
+      <li>Grouped games into a six-step journey with a progress map and a final AI-written "resource map" report.</li>
+      <li>Built the whole product: shared sessions across Telegram and the web, guest play before sign-up, subscriptions with auto-renewal via YooKassa, per-plan game and token limits, RU/EN.</li>
+    </ul></div>
+  <div class="step w"><h3>Result</h3>
+    <p class="sub">Feb–Apr 2026 vs earlier traffic, test accounts excluded</p>
+    <ul class="metrics three">
+      <li><b>15% <i class="arr">→</i> 73%</b><span>of users who started a game finished one</span></li>
+      <li><b>6% <i class="arr">→</i> 44%</b><span>of visitors who opened a game typed or chose a first answer</span></li>
+      <li><b>90%</b><span>of users who finished journey step 2 also finished step 5</span></li>
+    </ul></div>
+  <p class="also"><b>Lesson:</b> the biggest jump came from making answering easier. The AI decides when to move on; the user should be able to answer with a tap.</p>
+</article>
 
 <article class="item case c4" id="fraiven-reco">
   <span class="yr">2026</span><span class="node" aria-hidden="true"></span>
