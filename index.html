@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Orinta Filatova — Product Portfolio</title>
+<title>Orinta Filatova — Product &amp; Engineering Portfolio</title>
 <meta name="description" content="Orinta Filatova, Product Manager (Growth & AI Products). Case studies from Fraiven, Eksmo, Procter & Gamble, Tinkoff and Raiffeisen Bank.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,6 +47,11 @@ h1{font:400 clamp(44px,7vw,68px)/1.02 var(--serif);letter-spacing:-.015em}
 .contacts{display:flex;flex-wrap:wrap;gap:6px 24px;margin-top:26px;font-size:15px;color:var(--muted)}
 .btn{display:inline-block;margin-top:26px;padding:9px 18px;border:1px solid var(--ink);border-radius:4px;color:var(--ink);text-decoration:none;font-weight:500;font-size:14.5px}
 .btn:hover{background:var(--ink);color:var(--bg)}
+.btn+.btn{margin-left:10px}
+.stack{max-width:40em;margin-top:18px;font-size:14.5px;line-height:1.6;color:var(--muted)}
+.stack b{color:var(--ink);font-weight:600}
+.step ul li.st{color:var(--muted)}
+.step ul li.st b{color:var(--ink);font-weight:600}
 .index{margin-top:56px}
 .index h2{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:14px}
 .index ol{display:grid;grid-template-columns:1fr;gap:14px}
@@ -175,14 +180,15 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
   <span class="node" aria-hidden="true"></span>
   <p class="eyebrow">Portfolio</p>
   <h1>Orinta Filatova</h1>
-  <p class="role">Product Manager, Growth &amp; AI Products</p>
-  <p class="lead">6 years in product management and consulting at P&amp;G, Eksmo and Nielsen, 5 years as a fintech engineer, and since 2025 co-founder of two AI products.</p>
+  <p class="role">Product Manager &amp; Software Engineer — AI products</p>
+  <p class="lead">6 years in product management and consulting at P&amp;G, Eksmo and Nielsen, 5 years as a senior Java engineer in fintech, and since 2025 co-founder of two AI products that I design, build and grow myself.</p>
+  <p class="stack"><b>Stack:</b> Java 21 · Spring Boot / Spring AI · Kafka · PostgreSQL · Python · Next.js · Docker / Kubernetes / CI/CD · LLM APIs, RAG, embeddings, MCP servers, golden-set evals · Claude Code agentic workflow</p>
   <ul class="contacts">
     <li><a href="mailto:orinta.filatova@gmail.com">orinta.filatova@gmail.com</a></li>
     <li>Telegram <a href="https://t.me/oorinta">@oorinta</a></li>
     <li>Belgrade, Serbia</li>
   </ul>
-  <a class="btn" href="assets/Orinta_Filatova_CV.pdf">Download CV (PDF)</a>
+  <a class="btn" href="assets/Orinta_Filatova_CV.pdf">CV — Product (PDF)</a><a class="btn" href="assets/Orinta_Filatova_CV_Engineering.pdf">CV — Engineering (PDF)</a>
 
   <nav class="index" aria-labelledby="glance-h">
     <h2 id="glance-h">At a glance</h2>
@@ -295,6 +301,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
       <li>When a cycle is exploitable, the service identifies the faulty rate, restores a correct one automatically and sends a critical alert to the team; every case is tracked as a metric.</li>
       <li>Implemented flexible rate and spread settings by client group, giving the business finer control over FX margins.</li>
       <li>Rolled out new currencies to client segments.</li>
+      <li class="st"><b>Stack:</b> Java, Spring Boot, Kafka, PostgreSQL, Kubernetes, Jenkins · 6 microservices, 100+ operations/s</li>
       <li>Was the team's de-facto delivery manager for several months: owned every production release of the currency-conversion team — planning, coordination, safe rollout and incident response.</li>
     </ul></div>
   <div class="step w"><h3>Result</h3>
@@ -317,6 +324,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
       <li>Built a control tool with an admin panel. Business-logic checks find problem cases, such as a rate that hasn't arrived within its expected publication lag.</li>
       <li>Monitoring: the checks are exposed as Micrometer metrics in Prometheus, with alerts to the team in Mattermost and Telegram. A human steps in only when something is wrong.</li>
       <li>Designed a hot/cold storage architecture.</li>
+      <li class="st"><b>Stack:</b> Java, Spring Boot, Python, Kafka, PostgreSQL, Kubernetes, GitLab CI · Micrometer / Prometheus alerting</li>
     </ul></div>
   <div class="step w"><h3>Result</h3>
     <ul class="metrics two">
@@ -356,6 +364,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
       <li>Lowered the effort to answer: tap a card, pick a point on a scale, or press "Give ideas" / "Don't know". The buttons skip the classifier call entirely, and ideas come from a stronger model.</li>
       <li>Grouped games into a six-step journey with a progress map and a final AI-written "resource map" report.</li>
       <li>Built the whole product: shared sessions across Telegram and the web, guest play before sign-up, subscriptions with auto-renewal via YooKassa, per-plan game and token limits, RU/EN.</li>
+      <li class="st"><b>Stack:</b> LLM router with structured outputs, prompt pipelines, Telegram Bot API + web app, YooKassa subscriptions, event analytics</li>
     </ul></div>
   <div class="step w"><h3>Result</h3>
     <p class="sub">Feb–Apr 2026 vs earlier traffic, test accounts excluded</p>
@@ -379,6 +388,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
       <li>Switched from category-level to item-level embedding matching.</li>
       <li>Handled anti-interests (things a user dislikes) as explicit exclusions.</li>
       <li>Built an MCP server exposing catalogue search as tools for AI agents.</li>
+      <li class="st"><b>Stack:</b> Spring AI, embeddings, LLM enrichment at ingestion, Python MCP server · hand-labelled golden set as a regression test</li>
     </ul></div>
   <div class="step w"><h3>Result</h3>
     <ul class="metrics three">
@@ -403,6 +413,7 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
       <li>Validated a commission-based revenue model (venues pay commission).</li>
       <li>Set up measurement: GA4 funnel with consent mode, UTM attribution, impression logging.</li>
       <li>Built retention loops: personalised weekly digest, invite links with guest join, wishlist and "Memories".</li>
+      <li class="st"><b>Stack:</b> Java 21 / Spring Boot + Spring AI, Next.js PWA, PostgreSQL, Docker, CI/CD · built with Claude Code (plan → implement → review, hooks as quality gates)</li>
     </ul></div>
   <div class="step w"><h3>Result</h3>
     <ul class="metrics three">
@@ -429,15 +440,17 @@ figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.45}
 
 <footer class="item final">
   <span class="yr">Now</span><span class="node" aria-hidden="true"></span>
-  <h2>Now — open to PM roles</h2>
+  <h2>Now — open to product and engineering roles</h2>
+  <p>Product manager, technical PM, product / founding engineer, or Java + AI backend. Remote, Belgrade (CET).</p>
   <ul class="contacts">
     <li><a href="mailto:orinta.filatova@gmail.com">orinta.filatova@gmail.com</a></li>
     <li>Telegram <a href="https://t.me/oorinta">@oorinta</a></li>
-    <li><a href="assets/Orinta_Filatova_CV.pdf">CV (PDF)</a></li>
+    <li><a href="assets/Orinta_Filatova_CV.pdf">CV — Product (PDF)</a></li>
+    <li><a href="assets/Orinta_Filatova_CV_Engineering.pdf">CV — Engineering (PDF)</a></li>
   </ul>
   <div class="fine">
     <p>Orinta Filatova · Belgrade, Serbia</p>
-    <p><a href="mailto:orinta.filatova@gmail.com">orinta.filatova@gmail.com</a> · <a href="https://t.me/oorinta">Telegram @oorinta</a> · <a href="assets/Orinta_Filatova_CV.pdf">CV (PDF)</a></p>
+    <p><a href="mailto:orinta.filatova@gmail.com">orinta.filatova@gmail.com</a> · <a href="https://t.me/oorinta">Telegram @oorinta</a> · <a href="assets/Orinta_Filatova_CV.pdf">CV — Product</a> · <a href="assets/Orinta_Filatova_CV_Engineering.pdf">CV — Engineering</a></p>
   </div>
 </footer>
 
